@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "68c90fe055fd2c32114fc898_6915ad4326cb621ba2d27b65",
+  "id": "ApplyJobs_getAllTenantData",
+  "unpublishedCollection": {
+    "name": "getAllTenantData",
+    "pageId": "ApplyJobs",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "allTenantJobs",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

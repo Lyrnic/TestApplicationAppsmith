@@ -1,0 +1,9 @@
+{{
+{
+	"email" : appsmith.user.email,
+	"position": Custom4.model.appliedJob.jobTitle,
+	"jobId" : Custom4.model.appliedJob.jobId,
+  "candidateId": Custom4.model.appliedJob.user._id,
+	"tenant": Custom4.model.appliedJob.tenantPrefix
+}
+}}

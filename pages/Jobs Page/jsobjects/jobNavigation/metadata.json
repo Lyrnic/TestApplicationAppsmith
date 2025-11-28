@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "68c90fe055fd2c32114fc898_6909b99f1206200f45bd8c0e",
+  "id": "Jobs Page_jobNavigation",
+  "unpublishedCollection": {
+    "name": "jobNavigation",
+    "pageId": "Jobs Page",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

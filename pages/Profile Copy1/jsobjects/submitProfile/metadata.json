@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "68c90fe055fd2c32114fc898_691c52825802a51f3dc89dda",
+  "id": "Profile Copy1_submitProfile",
+  "unpublishedCollection": {
+    "name": "submitProfile",
+    "pageId": "Profile Copy1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "custom",
+        "value": "{}"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

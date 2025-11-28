@@ -1,0 +1,110 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "0px",
+  "borderWidth": "1",
+  "bottomRow": 193,
+  "boxShadow": "none",
+  "defaultModel": "{\n  \"tips\": [\n    \"Pass data to this widget in the default model field\",\n    \"Access data in the javascript file using the appsmith.model variable\",\n    \"Create events in the widget and trigger them in the javascript file using appsmith.triggerEvent('eventName')\",\n    \"Access data in CSS as var(--appsmith-model-{property-name})\"\n  ]\n}",
+  "displayName": "Custom",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onHelp"
+    },
+    {
+      "key": "onProfile"
+    },
+    {
+      "key": "onMessages"
+    },
+    {
+      "key": "onJobs"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onJobs"
+    },
+    {
+      "key": "onMessages"
+    },
+    {
+      "key": "onProfile"
+    },
+    {
+      "key": "onHelp"
+    }
+  ],
+  "events": [
+    "onResetClick",
+    "onJobs",
+    "onMessages",
+    "onProfile",
+    "onHelp"
+  ],
+  "features": {
+    "dynamicHeight": {
+      "active": true,
+      "defaultValue": "FIXED",
+      "sectionIndex": 2
+    }
+  },
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.867bcc8399fa3f897d425d72690b86e4.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "nxyij98sto",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 168,
+  "mobileLeftColumn": 12,
+  "mobileRightColumn": 35,
+  "mobileTopRow": 138,
+  "onHelp": "{{navigateTo('Help Page', {}, 'SAME_WINDOW');}}",
+  "onJobs": "{{navigateTo('Jobs Page', {}, 'SAME_WINDOW');}}",
+  "onMessages": "{{navigateTo('Messages', {}, 'SAME_WINDOW');}}",
+  "onProfile": "{{navigateTo('Profile', {}, 'SAME_WINDOW');}}",
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "originalBottomRow": 192,
+  "originalTopRow": 0,
+  "parentColumnSpace": 14,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 11,
+  "searchTags": [
+    "external"
+  ],
+  "shouldScrollContents": true,
+  "srcDoc": {
+    "css": ":root {\n  --bg-primary: #ffffff;\n  --bg-accent: #f1f5f9;\n  --text-primary: #3F3F46;\n  --text-secondary: #64748b;\n  --text-muted: #94a3b8;\n  --border-color: #e2e8f0;\n  --primary-color: #17ACA6;\n  --primary-hover: #149993;\n  --sidebar-bg: #FAFAFA;\n  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: sans-serif !important;\n}\n\nhtml, body {\n  height: 100%;\n  width: 100%;\n  font-family: sans-serif !important;\n  background-color: var(--sidebar-bg);\n  color: var(--text-primary);\n  overflow: hidden;\n}\n\n.sidebar {\n  width: 100%;\n  height: 100vh;\n  background: var(--sidebar-bg);\n  display: flex;\n  flex-direction: column;\n}\n\n.sidebar-header {\n  padding: 1rem;\n  border-bottom: 1px solid var(--border-color);\n  flex-shrink: 0;\n}\n\n.logo-container {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n}\n\n.logo {\n  width: 32px;\n  height: 32px;\n  background: linear-gradient(135deg, #17ACA6, #a7f3d0);\n  border-radius: 8px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: white;\n  font-weight: bold;\n  font-size: 0.875rem;\n  flex-shrink: 0;\n}\n\n.brand-info h2 {\n  font-size: 1rem;\n  font-weight: 600;\n  color: var(--text-primary);\n  margin: 0;\n}\n\n.brand-info p {\n  font-size: 0.875rem;\n  color: var(--text-muted);\n  margin: 0;\n}\n\n.sidebar-nav {\n  flex: 1;\n  padding: 1rem 0;\n  overflow-y: auto;\n}\n\n.nav-menu {\n  list-style: none;\n  margin-top: 1rem;\n}\n\n.nav-item {\n  margin: 0.25rem 0;\n}\n\n.nav-link {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  padding: 0.75rem 1rem;\n  text-decoration: none;\n  color: var(--text-secondary);\n  transition: all 0.2s ease;\n  border-radius: 0 24px 24px 0;\n  margin-right: 1rem;\n  font-size: 0.875rem;\n}\n\n.nav-link:hover,\n.nav-link.active {\n  background-color: var(--bg-accent);\n  color: var(--primary-color);\n  box-shadow: none;\n}\n\n.nav-link i {\n  width: 20px;\n  height: 20px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-shrink: 0;\n}\n\n.nav-link svg {\n  width: 20px;\n  height: 20px;\n  stroke: currentColor;\n  fill: none;\n  stroke-width: 2;\n}\n\n.nav-text {\n  flex: 1;\n  white-space: nowrap;\n  color: #3f3f46;\n}\n\n.sidebar-footer {\n  padding: 1rem;\n  flex-shrink: 0;\n}\n\n.user-profile {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n}\n\n.user-avatar {\n  width: 32px;\n  height: 32px;\n  background-color: #E2EFF2;\n  border-radius: 50%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: 500;\n  color: #0D94BB;\n  font-size: 0.875rem;\n  flex-shrink: 0;\n}\n\n.user-info {\n  flex: 1;\n  min-width: 0;\n}\n\n.user-name {\n  font-size: 0.875rem;\n  font-weight: 500;\n  color: var(--text-primary);\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  margin: 0;\n}\n\n.user-email {\n  font-size: 0.75rem;\n  color: var(--text-muted);\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  margin: 0;\n}",
+    "html": "<aside class=\"sidebar\" id=\"sidebar\">\n\t<div class=\"sidebar-header\">\n\t\t<div class=\"logo-container\">\n\t\t\t<div class=\"logo\">S</div>\n\t\t\t<div class=\"brand-info\">\n\t\t\t\t<h2>Safal</h2>\n\t\t\t\t<p>Candidate Portal</p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<nav class=\"sidebar-nav\">\n\t\t<ul class=\"nav-menu\">\n\t\t\t<li class=\"nav-item\">\n\t\t\t\t<a href=\"#\" class=\"nav-link active\" data-page=\"jobs\">\n\t\t\t\t\t<i>\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\">\n\t\t\t\t\t\t\t<rect x=\"2\" y=\"7\" width=\"20\" height=\"14\" rx=\"2\" ry=\"2\"/>\n\t\t\t\t\t\t\t<path d=\"M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16\"/>\n\t\t\t\t\t\t</svg>\n\t\t\t\t\t</i>\n\t\t\t\t\t<span class=\"nav-text\">Applications & Interviews\n\t\t\t\t\t</span>\n\t\t\t\t</a>\n\t\t\t</li>\n\t\t\t<li class=\"nav-item\">\n\t\t\t\t<a href=\"#\" class=\"nav-link\" data-page=\"messages\">\n\t\t\t\t\t<i>\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\">\n\t\t\t\t\t\t\t<path d=\"M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z\"/>\n\t\t\t\t\t\t</svg>\n\t\t\t\t\t</i>\n\t\t\t\t\t<span class=\"nav-text\">Messages</span>\n\t\t\t\t</a>\n\t\t\t</li>\n\t\t\t<li class=\"nav-item\">\n\t\t\t\t<a href=\"#\" class=\"nav-link\" data-page=\"profile\">\n\t\t\t\t\t<i>\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\">\n\t\t\t\t\t\t\t<path d=\"M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\"/>\n\t\t\t\t\t\t\t<circle cx=\"12\" cy=\"7\" r=\"4\"/>\n\t\t\t\t\t\t</svg>\n\t\t\t\t\t</i>\n\t\t\t\t\t<span class=\"nav-text\">Profile</span>\n\t\t\t\t</a>\n\t\t\t</li>\n\t\t\t<li class=\"nav-item\">\n\t\t\t\t<a href=\"#\" class=\"nav-link\" data-page=\"help\">\n\t\t\t\t\t<i>\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\">\n\t\t\t\t\t\t\t<circle cx=\"12\" cy=\"12\" r=\"10\"/>\n\t\t\t\t\t\t\t<path d=\"M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3\"/>\n\t\t\t\t\t\t\t<path d=\"M12 17h.01\"/>\n\t\t\t\t\t\t</svg>\n\t\t\t\t\t</i>\n\t\t\t\t\t<span class=\"nav-text\">Help</span>\n\t\t\t\t</a>\n\t\t\t</li>\n\t\t</ul>\n\t</nav>\n\n</aside>",
+    "importMap": "{}",
+    "js": "// Sidebar functionality for Appsmith\n// Triggers a unique Appsmith event for each menu item\nclass Sidebar {\n  constructor() {\n    this.sidebar = document.getElementById('sidebar');\n    this.navLinks = document.querySelectorAll('.nav-link');\n    this.init();\n  }\n  init() {\n    this.setupEventListeners();\n  }\n  setupEventListeners() {\n    this.navLinks.forEach(link => {\n      link.addEventListener('click', e => {\n        e.preventDefault();\n        const page = link.getAttribute('data-page');\n        this.setActiveLink(link);\n        // Fire a unique Appsmith event for each menu item\n        if (typeof appsmith !== 'undefined' && appsmith.triggerEvent) {\n          switch (page) {\n            case 'jobs':\n              appsmith.triggerEvent('onJobs', {\n                page: 'jobs'\n              });\n              break;\n            case 'messages':\n              appsmith.triggerEvent('onMessages', {\n                page: 'messages'\n              });\n              break;\n            case 'profile':\n              appsmith.triggerEvent('onProfile', {\n                page: 'profile'\n              });\n              break;\n            case 'help':\n              appsmith.triggerEvent('onHelp', {\n                page: 'help'\n              });\n              break;\n            default:\n              appsmith.triggerEvent('onSidebarNav', {\n                page\n              });\n          }\n        }\n      });\n    });\n  }\n  setActiveLink(activeLink) {\n    this.navLinks.forEach(link => {\n      link.classList.remove('active');\n    });\n    activeLink.classList.add('active');\n  }\n}\n\n// Initialize sidebar when DOM is loaded or with appsmith onReady\nif (typeof appsmith !== 'undefined' && appsmith.onReady) {\n  appsmith.onReady(() => {\n    new Sidebar();\n  });\n} else {\n  document.addEventListener('DOMContentLoaded', () => {\n    new Sidebar();\n  });\n}"
+  },
+  "tags": [
+    "Display"
+  ],
+  "theme": "{{appsmith.theme}}",
+  "topRow": 0,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": ":root {\n  --bg-primary: #ffffff;\n  --bg-accent: #f1f5f9;\n  --text-primary: #3F3F46;\n  --text-secondary: #64748b;\n  --text-muted: #94a3b8;\n  --border-color: #e2e8f0;\n  --primary-color: #17ACA6;\n  --primary-hover: #149993;\n  --sidebar-bg: #FAFAFA;\n  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n\tfont-family: sans-serif !important;\n}\n\nhtml, body {\n  height: 100%;\n  width: 100%;\nfont-family: sans-serif !important;  background-color: var(--sidebar-bg);\n  color: var(--text-primary);\n  overflow: hidden;\n}\n\n.sidebar {\n  width: 100%;\n  height: 100vh;\n  background: var(--sidebar-bg);\n  display: flex;\n  flex-direction: column;\n}\n\n.sidebar-header {\n  padding: 1rem;\n  border-bottom: 1px solid var(--border-color);\n  flex-shrink: 0;\n}\n\n.logo-container {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n}\n\n.logo {\n  width: 32px;\n  height: 32px;\n  background: linear-gradient(135deg, #17ACA6, #a7f3d0);\n  border-radius: 8px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: white;\n  font-weight: bold;\n  font-size: 0.875rem;\n  flex-shrink: 0;\n}\n\n.brand-info h2 {\n  font-size: 1rem;\n  font-weight: 600;\n  color: var(--text-primary);\n  margin: 0;\n}\n\n.brand-info p {\n  font-size: 0.875rem;\n  color: var(--text-muted);\n  margin: 0;\n}\n\n.sidebar-nav {\n  flex: 1;\n  padding: 1rem 0;\n  overflow-y: auto;\n}\n\n.nav-menu {\n  list-style: none;\n  margin-top: 1rem;\n}\n\n.nav-item {\n  margin: 0.25rem 0;\n}\n\n.nav-link {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  padding: 0.75rem 1rem;\n  text-decoration: none;\n  color: var(--text-secondary);\n  transition: all 0.2s ease;\n  border-radius: 0 24px 24px 0;\n  margin-right: 1rem;\n  font-size: 0.875rem;\n}\n\n.nav-link:hover,\n.nav-link.active {\n  background-color: var(--bg-accent);\n  color: var(--primary-color);\n  box-shadow: none;\n}\n\n.nav-link i {\n  width: 20px;\n  height: 20px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-shrink: 0;\n}\n\n.nav-link svg {\n  width: 20px;\n  height: 20px;\n  stroke: currentColor;\n  fill: none;\n  stroke-width: 2;\n}\n\n.nav-text {\n  flex: 1;\n  white-space: nowrap;\n  color: #3f3f46;\n}\n\n.sidebar-footer {\n  padding: 1rem;\n  flex-shrink: 0;\n}\n\n.user-profile {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n}\n\n.user-avatar {\n  width: 32px;\n  height: 32px;\n  background-color: #E2EFF2;\n  border-radius: 50%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: 500;\n  color: #0D94BB;\n  font-size: 0.875rem;\n  flex-shrink: 0;\n}\n\n.user-info {\n  flex: 1;\n  min-width: 0;\n}\n\n.user-name {\n  font-size: 0.875rem;\n  font-weight: 500;\n  color: var(--text-primary);\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  margin: 0;\n}\n\n.user-email {\n  font-size: 0.75rem;\n  color: var(--text-muted);\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  margin: 0;\n}\n",
+    "html": "<aside class=\"sidebar\" id=\"sidebar\">\n\t<div class=\"sidebar-header\">\n\t\t<div class=\"logo-container\">\n\t\t\t<div class=\"logo\">S</div>\n\t\t\t<div class=\"brand-info\">\n\t\t\t\t<h2>Safal</h2>\n\t\t\t\t<p>Candidate Portal</p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<nav class=\"sidebar-nav\">\n\t\t<ul class=\"nav-menu\">\n\t\t\t<li class=\"nav-item\">\n\t\t\t\t<a href=\"#\" class=\"nav-link active\" data-page=\"jobs\">\n\t\t\t\t\t<i>\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\">\n\t\t\t\t\t\t\t<rect x=\"2\" y=\"7\" width=\"20\" height=\"14\" rx=\"2\" ry=\"2\"/>\n\t\t\t\t\t\t\t<path d=\"M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16\"/>\n\t\t\t\t\t\t</svg>\n\t\t\t\t\t</i>\n\t\t\t\t\t<span class=\"nav-text\">Applications & Interviews\n\t\t\t\t\t</span>\n\t\t\t\t</a>\n\t\t\t</li>\n\t\t\t<li class=\"nav-item\">\n\t\t\t\t<a href=\"#\" class=\"nav-link\" data-page=\"messages\">\n\t\t\t\t\t<i>\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\">\n\t\t\t\t\t\t\t<path d=\"M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z\"/>\n\t\t\t\t\t\t</svg>\n\t\t\t\t\t</i>\n\t\t\t\t\t<span class=\"nav-text\">Messages</span>\n\t\t\t\t</a>\n\t\t\t</li>\n\t\t\t<li class=\"nav-item\">\n\t\t\t\t<a href=\"#\" class=\"nav-link\" data-page=\"profile\">\n\t\t\t\t\t<i>\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\">\n\t\t\t\t\t\t\t<path d=\"M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\"/>\n\t\t\t\t\t\t\t<circle cx=\"12\" cy=\"7\" r=\"4\"/>\n\t\t\t\t\t\t</svg>\n\t\t\t\t\t</i>\n\t\t\t\t\t<span class=\"nav-text\">Profile</span>\n\t\t\t\t</a>\n\t\t\t</li>\n\t\t\t<li class=\"nav-item\">\n\t\t\t\t<a href=\"#\" class=\"nav-link\" data-page=\"help\">\n\t\t\t\t\t<i>\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\">\n\t\t\t\t\t\t\t<circle cx=\"12\" cy=\"12\" r=\"10\"/>\n\t\t\t\t\t\t\t<path d=\"M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3\"/>\n\t\t\t\t\t\t\t<path d=\"M12 17h.01\"/>\n\t\t\t\t\t\t</svg>\n\t\t\t\t\t</i>\n\t\t\t\t\t<span class=\"nav-text\">Help</span>\n\t\t\t\t</a>\n\t\t\t</li>\n\t\t</ul>\n\t</nav>\n\n</aside>",
+    "importMap": "{}",
+    "js": "// Sidebar functionality for Appsmith\n// Triggers a unique Appsmith event for each menu item\nclass Sidebar {\n    constructor() {\n        this.sidebar = document.getElementById('sidebar');\n        this.navLinks = document.querySelectorAll('.nav-link');\n        this.init();\n    }\n    \n    init() {\n        this.setupEventListeners();\n    }\n    \n    setupEventListeners() {\n        this.navLinks.forEach(link => {\n            link.addEventListener('click', (e) => {\n                e.preventDefault();\n                const page = link.getAttribute('data-page');\n                this.setActiveLink(link);\n                // Fire a unique Appsmith event for each menu item\n                if (typeof appsmith !== 'undefined' && appsmith.triggerEvent) {\n                  switch(page) {\n                    case 'jobs':\n                      appsmith.triggerEvent('onJobs', { page: 'jobs' });\n                      break;\n                    case 'messages':\n                      appsmith.triggerEvent('onMessages', { page: 'messages' });\n                      break;\n                    case 'profile':\n                      appsmith.triggerEvent('onProfile', { page: 'profile' });\n                      break;\n                    case 'help':\n                      appsmith.triggerEvent('onHelp', { page: 'help' });\n                      break;\n                    default:\n                      appsmith.triggerEvent('onSidebarNav', { page });\n                  }\n                }\n            });\n        });\n    }\n    \n    setActiveLink(activeLink) {\n        this.navLinks.forEach(link => {\n            link.classList.remove('active');\n        });\n        activeLink.classList.add('active');\n    }\n}\n\n// Initialize sidebar when DOM is loaded or with appsmith onReady\nif (typeof appsmith !== 'undefined' && appsmith.onReady) {\n  appsmith.onReady(() => {\n    new Sidebar();\n  });\n} else {\n  document.addEventListener('DOMContentLoaded', () => {\n    new Sidebar();\n  });\n}\n"
+  },
+  "version": 1,
+  "widgetId": "hqz5p6s9x5",
+  "widgetName": "Custom3"
+}

@@ -1,0 +1,77 @@
+{
+  "backgroundColor": "transparent",
+  "borderColor": "transparent",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "0",
+  "bottomRow": 22,
+  "boxShadow": "none",
+  "defaultModel": "",
+  "displayName": "Custom",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "events": [
+    "onResetClick"
+  ],
+  "features": {
+    "dynamicHeight": {
+      "active": true,
+      "defaultValue": "FIXED",
+      "sectionIndex": 2
+    }
+  },
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.867bcc8399fa3f897d425d72690b86e4.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "eml292q53e",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 679,
+  "mobileLeftColumn": 21,
+  "mobileRightColumn": 44,
+  "mobileTopRow": 649,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "originalBottomRow": 679,
+  "originalTopRow": 649,
+  "parentColumnSpace": 20,
+  "parentId": "ax6hrsq3ff",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchTags": [
+    "external"
+  ],
+  "srcDoc": {
+    "css": "",
+    "html": "   <div style=\"\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        height: 100vh;\n    \">\n        <div style=\"\n            border: 16px solid #219ebc;\n            border-top: 16px solid #f3f3f3;\n            border-radius: 50%;\n            width: 75px;\n            height: 75px;\n            animation: spin 2s linear infinite;\n        \"></div>\n    </div>\n    \n    <style>\n        @keyframes spin {\n            0% { transform: rotate(0deg); }\n            100% { transform: rotate(360deg); }\n        }\n    </style>",
+    "importMap": "{}",
+    "js": ""
+  },
+  "tags": [
+    "Display"
+  ],
+  "theme": "{{appsmith.theme}}",
+  "topRow": 0,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": "",
+    "html": "   <div style=\"\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        height: 100vh;\n    \">\n        <div style=\"\n            border: 16px solid #219ebc;\n            border-top: 16px solid #f3f3f3;\n            border-radius: 50%;\n            width: 75px;\n            height: 75px;\n            animation: spin 2s linear infinite;\n        \"></div>\n    </div>\n    \n    <style>\n        @keyframes spin {\n            0% { transform: rotate(0deg); }\n            100% { transform: rotate(360deg); }\n        }\n    </style>",
+    "importMap": "{}",
+    "js": ""
+  },
+  "version": 1,
+  "widgetId": "jutf4n04lg",
+  "widgetName": "Custom4Copy"
+}

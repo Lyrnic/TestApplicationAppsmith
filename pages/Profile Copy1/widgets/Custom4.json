@@ -1,0 +1,76 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#f4f4f5",
+  "borderRadius": "0px",
+  "borderWidth": "0",
+  "bottomRow": 948,
+  "bottomRowBeforeCollapse": 948,
+  "boxShadow": "none",
+  "defaultModel": "{\n  \"tips\": [\n    \"Pass data to this widget in the default model field\",\n    \"Access data in the javascript file using the appsmith.model variable\",\n    \"Create events in the widget and trigger them in the javascript file using appsmith.triggerEvent('eventName')\",\n    \"Access data in CSS as var(--appsmith-model-{property-name})\"\n  ]\n}",
+  "displayName": "Custom",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "events": [
+    "onResetClick"
+  ],
+  "features": {
+    "dynamicHeight": {
+      "active": true,
+      "defaultValue": "FIXED",
+      "sectionIndex": 2
+    }
+  },
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.867bcc8399fa3f897d425d72690b86e4.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": false,
+  "key": "r36btrzku7",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 155,
+  "mobileLeftColumn": 11,
+  "mobileRightColumn": 34,
+  "mobileTopRow": 125,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "originalBottomRow": 948,
+  "originalTopRow": 903,
+  "parentColumnSpace": 22.984375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 11,
+  "searchTags": [
+    "external"
+  ],
+  "shouldScrollContents": true,
+  "srcDoc": {
+    "css": ".app {\n  width: calc(1px * var(--appsmith-ui-width));\n  justify-content: center;\n  border-radius: 0px;\n  border: none;\n}\n.app .tip-container {\n  margin-bottom: 20px;\n}\n.app .tip-container h2 {\n  margin-bottom: 20px;\n  font-size: 16px;\n  font-weight: 700;\n}\n.app .tip-container .tip-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: baseline;\n}\n.app .tip-container .tip-header div {\n  color: #999;\n}\n.app .button-container {\n  text-align: right;\n}\n.app .button-container button {\n  margin: 0 10px;\n  border-radius: var(--appsmith-theme-borderRadius) !important;\n}\n.app .button-container button.primary {\n  background: var(--appsmith-theme-primaryColor) !important;\n}\n.app .button-container button.reset:not([disabled]) {\n  color: var(--appsmith-theme-primaryColor) !important;\n  border-color: var(--appsmith-theme-primaryColor) !important;\n}",
+    "html": "<!doctype html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\" />\n\t\t<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\t\t<title>Loader — Light Theme</title>\n\t\t<style>\n\t\t\t:root {\n\t\t\t\t--bg: #f8fafc; /* Updated to match requested color */\n\t\t\t\t--card: #ffffff;\n\t\t\t\t--muted: #6b7280;\n\t\t\t\t--accent: #5b46ff;\n\t\t\t\t--glass: rgba(255, 255, 255, 0.8);\n\t\t\t}\n\n\t\t\thtml, body {\n\t\t\t\tmargin: 0;\n\t\t\t\tfont-family: sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial;\n\t\t\t\tbackground-color: #f8fafc !important;/* Exactly this color — no gradient, no variable */\n\t\t\t\tcolor: #1e293b;\n\t\t\t\tdisplay: flex;\n\t\t\t\talign-items: center;\n\t\t\t\tjustify-content: center;\n\t\t\t\tpadding: 32px;\n\t\t\t}\n\n\t\t\t.overlay {\n\t\t\t\tposition: fixed;\n\t\t\t\tinset: 0;\n\t\t\t\tdisplay: flex;\n\t\t\t\talign-items: center;\n\t\t\t\tjustify-content: center;\n\t\t\t\tbackground: rgba(255, 255, 255, 0.65);\n\t\t\t\tbackdrop-filter: blur(8px);\n\t\t\t\tz-index: 999;\n\t\t\t\ttransition: opacity 180ms ease;\n\t\t\t}\n\n\t\t\t.overlay .panel {\n\t\t\t\tbackground: var(--card);\n\t\t\t\tpadding: 22px 26px;\n\t\t\t\tborder-radius: 14px;\n\t\t\t\tdisplay: flex;\n\t\t\t\tgap: 14px;\n\t\t\t\talign-items: center;\n\t\t\t\tbox-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);\n\t\t\t}\n\n\t\t\t.spinner {\n\t\t\t\twidth: 48px;\n\t\t\t\theight: 48px;\n\t\t\t\tborder-radius: 50%;\n\t\t\t\tposition: relative;\n\t\t\t\tdisplay: inline-block;\n\t\t\t}\n\n\t\t\t.spinner::before {\n\t\t\t\tcontent: '';\n\t\t\t\tposition: absolute;\n\t\t\t\tinset: 0;\n\t\t\t\tborder-radius: 50%;\n\t\t\t\tborder: 5px solid rgba(0, 0, 0, 0.06);\n\t\t\t\tborder-top-color: var(--accent);\n\t\t\t\tanimation: spin 0.9s linear infinite;\n\t\t\t\tbox-sizing: border-box;\n\t\t\t\tfilter: drop-shadow(0 4px 10px rgba(91, 70, 255, 0.2));\n\t\t\t}\n\n\t\t\t@keyframes spin {\n\t\t\t\tto { transform: rotate(360deg); }\n\t\t\t}\n\n\t\t\tstrong {\n\t\t\t\tfont-size: 18px;\n\t\t\t\tdisplay: block;\n\t\t\t\tmargin-bottom: 4px;\n\t\t\t}\n\n\t\t\t.msg {\n\t\t\t\tfont-size: 13px;\n\t\t\t\tcolor: var(--muted);\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<div class=\"overlay\" role=\"status\" aria-live=\"polite\">\n\t\t\t<div class=\"panel\">\n\t\t\t\t<div class=\"spinner\" aria-hidden=\"true\"></div>\n\t\t\t\t<div>\n\t\t\t\t\t<strong>Almost there…</strong>\n\t\t\t\t\t<div class=\"msg\">Hang tight! We're processing your resume.</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>",
+    "js": ""
+  },
+  "tags": [
+    "Display"
+  ],
+  "theme": "{{appsmith.theme}}",
+  "topRow": 903,
+  "topRowBeforeCollapse": 903,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": ".app {\n  width: calc(1px * var(--appsmith-ui-width));\n  justify-content: center;\n  border-radius: 0px;\n  border: none;\n\n  .tip-container {\n    margin-bottom: 20px;\n\n    h2 {\n      margin-bottom: 20px;\n      font-size: 16px;\n      font-weight: 700;\n    }\n\n    .tip-header {\n      display: flex;\n      justify-content: space-between;\n      align-items: baseline;\n\n      div {\n        color: #999;\n      }\n    }\n  }\n\n\t.button-container {\n      text-align: right;\n\n      button {\n        margin: 0 10px;\n        border-radius: var(--appsmith-theme-borderRadius) !important;\n\n        &.primary {\n          background: var(--appsmith-theme-primaryColor) !important;\n        }\n\n        &.reset:not([disabled]) {\n          color: var(--appsmith-theme-primaryColor) !important;\n          border-color: var(--appsmith-theme-primaryColor) !important;\n        }\n      }\n    }\n}\n",
+    "html": "<!doctype html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\" />\n\t\t<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\t\t<title>Loader — Light Theme</title>\n\t\t<style>\n\t\t\t:root {\n\t\t\t\t--bg: #f8fafc; /* Updated to match requested color */\n\t\t\t\t--card: #ffffff;\n\t\t\t\t--muted: #6b7280;\n\t\t\t\t--accent: #5b46ff;\n\t\t\t\t--glass: rgba(255, 255, 255, 0.8);\n\t\t\t}\n\n\t\t\thtml, body {\n\t\t\t\tmargin: 0;\n\t\t\t\tfont-family: sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial;\n\t\t\t\tbackground-color: #f8fafc !important;/* Exactly this color — no gradient, no variable */\n\t\t\t\tcolor: #1e293b;\n\t\t\t\tdisplay: flex;\n\t\t\t\talign-items: center;\n\t\t\t\tjustify-content: center;\n\t\t\t\tpadding: 32px;\n\t\t\t}\n\n\t\t\t.overlay {\n\t\t\t\tposition: fixed;\n\t\t\t\tinset: 0;\n\t\t\t\tdisplay: flex;\n\t\t\t\talign-items: center;\n\t\t\t\tjustify-content: center;\n\t\t\t\tbackground: rgba(255, 255, 255, 0.65);\n\t\t\t\tbackdrop-filter: blur(8px);\n\t\t\t\tz-index: 999;\n\t\t\t\ttransition: opacity 180ms ease;\n\t\t\t}\n\n\t\t\t.overlay .panel {\n\t\t\t\tbackground: var(--card);\n\t\t\t\tpadding: 22px 26px;\n\t\t\t\tborder-radius: 14px;\n\t\t\t\tdisplay: flex;\n\t\t\t\tgap: 14px;\n\t\t\t\talign-items: center;\n\t\t\t\tbox-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);\n\t\t\t}\n\n\t\t\t.spinner {\n\t\t\t\twidth: 48px;\n\t\t\t\theight: 48px;\n\t\t\t\tborder-radius: 50%;\n\t\t\t\tposition: relative;\n\t\t\t\tdisplay: inline-block;\n\t\t\t}\n\n\t\t\t.spinner::before {\n\t\t\t\tcontent: '';\n\t\t\t\tposition: absolute;\n\t\t\t\tinset: 0;\n\t\t\t\tborder-radius: 50%;\n\t\t\t\tborder: 5px solid rgba(0, 0, 0, 0.06);\n\t\t\t\tborder-top-color: var(--accent);\n\t\t\t\tanimation: spin 0.9s linear infinite;\n\t\t\t\tbox-sizing: border-box;\n\t\t\t\tfilter: drop-shadow(0 4px 10px rgba(91, 70, 255, 0.2));\n\t\t\t}\n\n\t\t\t@keyframes spin {\n\t\t\t\tto { transform: rotate(360deg); }\n\t\t\t}\n\n\t\t\tstrong {\n\t\t\t\tfont-size: 18px;\n\t\t\t\tdisplay: block;\n\t\t\t\tmargin-bottom: 4px;\n\t\t\t}\n\n\t\t\t.msg {\n\t\t\t\tfont-size: 13px;\n\t\t\t\tcolor: var(--muted);\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<div class=\"overlay\" role=\"status\" aria-live=\"polite\">\n\t\t\t<div class=\"panel\">\n\t\t\t\t<div class=\"spinner\" aria-hidden=\"true\"></div>\n\t\t\t\t<div>\n\t\t\t\t\t<strong>Almost there…</strong>\n\t\t\t\t\t<div class=\"msg\">Hang tight! We're processing your resume.</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>",
+    "js": ""
+  },
+  "version": 1,
+  "widgetId": "6voe5j6u71",
+  "widgetName": "Custom4"
+}

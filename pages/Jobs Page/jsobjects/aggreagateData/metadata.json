@@ -1,0 +1,28 @@
+{
+  "gitSyncId": "68c90fe055fd2c32114fc898_68e4cb592842eb45d92bc624",
+  "id": "Jobs Page_aggreagateData",
+  "unpublishedCollection": {
+    "name": "aggreagateData",
+    "pageId": "Jobs Page",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "interviewDataAll",
+        "value": "[]"
+      },
+      {
+        "name": "dataLoaded",
+        "value": "false"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

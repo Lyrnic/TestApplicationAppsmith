@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "68c90fe055fd2c32114fc898_68cd1552d49f1b184d7f3cbe",
+  "id": "ApplyJobs_aggregateData",
+  "unpublishedCollection": {
+    "name": "aggregateData",
+    "pageId": "ApplyJobs",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

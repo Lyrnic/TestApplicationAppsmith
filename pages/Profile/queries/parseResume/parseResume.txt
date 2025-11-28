@@ -1,0 +1,7 @@
+{{
+	{
+		"email" : appsmith.user.email,
+		"fileType": Custom1.model.resumeFileType,
+		"data":[Custom1.model.resumeFile]
+	}
+}}
